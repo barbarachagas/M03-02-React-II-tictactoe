@@ -1,5 +1,13 @@
+import { Provider } from "react-redux";
+import TicTacToe from "../component/TicTacToe";
+import { store } from "../component/store";
+
 function App() {
-  return <div>Projeto base</div>;
+  return (
+    <Provider store={store}>
+      <TicTacToe />
+    </Provider>
+  );
 }
 
 export default App;
